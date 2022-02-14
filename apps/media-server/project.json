@@ -1,0 +1,27 @@
+{
+  "root": "apps/media-server",
+  "projectType": "application",
+  "sourceRoot": "apps/media-server",
+  "targets": {
+    "build": {
+      "executor": "@nx-go/nx-go:build",
+      "options": {
+        "outputPath": "dist\\apps\\media-server",
+        "main": "apps\\media-server\\main.go"
+      }
+    },
+    "serve": {
+      "executor": "@nx-go/nx-go:serve",
+      "options": {
+        "main": "apps\\media-server\\main.go"
+      }
+    },
+    "test": {
+      "executor": "@nx-go/nx-go:test"
+    },
+    "lint": {
+      "executor": "@nx-go/nx-go:lint"
+    }
+  },
+  "tags": []
+}
