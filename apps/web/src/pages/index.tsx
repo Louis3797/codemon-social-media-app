@@ -1,6 +1,6 @@
 import styles from './index.module.scss';
 
-export function Index() {
+export const Index: React.FC = () => {
   /*
    * Replace the elements below with your own.
    *
