@@ -1,6 +1,4 @@
-# ui
-
-This library was generated with [Nx](https://nx.dev).
+# UI components for Next.js Frontend
 
 ## Running unit tests
 
