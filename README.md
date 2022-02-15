@@ -1,94 +1,146 @@
+<div id="top"></div>
+
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+
+  <h1 align="center">codemon</h1>
+
+  <p align="center">
+    A social network for developers to share code and knowledge. Login with your Github Account and start!
+    <br />
+    <br />
+    <a href="https://github.com/Louis3797/codemon-social-media-app/">View Demo</a>
+    ·
+    <a href="https://github.com/Louis3797/codemon-social-media-app/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Louis3797/codemon-social-media-app/issues">Request Feature</a>
+  </p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+![homescreen][product-screenshot]
+
+codemon is a social media app that can be used to share and code and knowledge and also to work with people together
+
+This project was generated using [Nx](https://nx.dev/). The Frontend is build using Next.js and for the Backend we use Nest.js as main Server and Golang as Media Microservice.  
+
+### Built With
+
+* [Nx](https://nx.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Next.js](https://nextjs.org/)
+* [React.js](https://reactjs.org/)
+* [Golang](https://go.dev/)
+* [Prisma](https://www.prisma.io/)
+* [Apollo](https://www.apollographql.com/)
+* [GraphQL](https://graphql.org/)
+* [MySQL](https://www.mysql.com/)
+* [Nest.js](https://nestjs.com/)
+* [Socket.Io](https://socket.io/)
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+### Prerequisites
+
+| Codebase | Description      |
+| -------- | ---------------- |
+| apps  | [All Apps these Project uses are here](https://github.com/Louis3797/codemon-social-media-app/tree/main/apps)  |
+| libs  | [Shared Libaries](https://github.com/Louis3797/codemon-social-media-app/tree/main/libs)  |
+
+This project uses npm as packet manager.
+
+### Installation
+
+1. Clone the repo
+
+   ```sh
+   git clone https://github.com/Louis3797/codemon-social-media-app.git
+   ```
+
+2. Install yarn packages
+
+   ```sh
+    cd codemon-social-media-app
+    npm install 
+   ```
+
+3. Run on dev Server
+
+   ```sh
+    nx serve api
+    nx serve media-server
+    nx serve web
+   ```
+
+<!-- USAGE EXAMPLES -->
+## Usage
 
 
-# codemon
+<!-- ROADMAP -->
+## Roadmap
 
-This project was generated using [Nx](https://nx.dev).
+* [ ] Add Frontend
+* [ ] Setup Databases and Schemas
+* [ ] Setup Nestjs and Redis
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+See the [open issues](https://github.com/Louis3797/codemon-social-media-app/issues) for a full list of proposed features (and known issues).
 
-🔎 **Smart, Fast and Extensible Build System**
+<!-- LICENSE -->
+## License
 
-## Adding capabilities to your workspace
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+<!-- CONTACT -->
+## Contact
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+Louis
 
-Below are our core plugins:
+Project Link: [codemon](https://github.com/Louis3797/codemon-social-media-app/)
 
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+[product-screenshot]: assets/image_url.png
 
-## Generate an application
+[forks-shield]: https://img.shields.io/github/forks/Louis3797/codemon-social-media-app.svg?style=for-the-badge
+[forks-url]: https://github.com/Louis3797/codemon-social-media-app/network/members
 
-Run `nx g @nrwl/react:app my-app` to generate an application.
+[stars-shield]: https://img.shields.io/github/stars/Louis3797/codemon-social-media-app.svg?style=for-the-badge
+[stars-url]: https://github.com/Louis3797/codemon-social-media-app/stargazers
 
-> You can use any of the plugins above to generate applications as well.
+[issues-shield]: https://img.shields.io/github/issues/Louis3797/codemon-social-media-app.svg?style=for-the-badge
+[issues-url]: https://github.com/Louis3797/codemon-social-media-app/issues
 
-When using Nx, you can create multiple applications and libraries in the same workspace.
-
-## Generate a library
-
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are shareable across libraries and applications. They can be imported from `@blaze/mylib`.
-
-## Development server
-
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+[license-shield]: https://img.shields.io/github/license/Louis3797/codemon-social-media-app.svg?style=for-the-badge
+[license-url]: https://github.com/Louis3797/codemon-social-media-app/blob/master/LICENSE.txt
