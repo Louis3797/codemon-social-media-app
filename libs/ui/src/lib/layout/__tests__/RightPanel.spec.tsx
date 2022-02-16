@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import RightPanel from '../RightPanel';
+import { RightPanel } from '../RightPanel';
 
 describe('RightPanel', () => {
   it('should render successfully', () => {

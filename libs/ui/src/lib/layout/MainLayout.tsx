@@ -1,8 +1,8 @@
 import React from 'react';
-import Container from '@mui/material/Container';
 import { useScreenType } from '@codemon/shared-hooks';
-import LeftPanel from './LeftPanel';
-import RightPanel from './RightPanel';
+import { RightPanel } from './RightPanel';
+import { Grid } from '@mui/material';
+import Navbar from '../../Navbar/Navbar';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -20,28 +20,46 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
   let panel = null;
 
   switch (screenType) {
-    case '2-cols':
-      panel = (
-        <>
-          <LeftPanel>{left}</LeftPanel>
-          {children}
-          <RightPanel>{right}</RightPanel>
-        </>
-      );
-      break;
     case '1-cols':
       panel = (
         <>
-          <LeftPanel>{left}</LeftPanel>
-          {children}
+          <nav>
+            <Navbar />
+          </nav>
+          <body>
+            <Grid
+              container
+              direction="row"
+              justifyContent="center"
+              alignItems="stretch"
+              spacing={2}
+            >
+              <Grid item xs={10} sm={8} md={6} lg={5} xl={4}>
+                {children}
+              </Grid>
+              <RightPanel>{right}</RightPanel>
+            </Grid>
+          </body>
         </>
       );
       break;
+
     case 'fullscreen':
-      panel = <Container>{children}</Container>;
+      panel = (
+        <Grid
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="stretch"
+        >
+          <Grid item xs={12} sm={8}>
+            {children}
+          </Grid>
+        </Grid>
+      );
   }
 
-  return <Container>{panel}</Container>;
+  return <div>{panel}</div>;
 };
 
 export default MainLayout;
