@@ -7,12 +7,11 @@ import Navbar from '../../Navbar/Navbar';
 interface MainLayoutProps {
   children: React.ReactNode;
   right?: React.ReactNode;
-  left?: React.ReactNode;
 }
 
 export const MainLayout: React.FC<MainLayoutProps> = ({
   children,
-  left = <div />,
+
   right = <div />,
 }) => {
   const screenType = useScreenType();
@@ -23,9 +22,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
     case '1-cols':
       panel = (
         <>
-          <nav>
-            <Navbar />
-          </nav>
+          <Navbar />
           <body>
             <Grid
               container
@@ -35,9 +32,13 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
               spacing={2}
             >
               <Grid item xs={10} sm={8} md={6} lg={5} xl={4}>
+                <div style={{ marginBottom: 30 }} />
                 {children}
               </Grid>
-              <RightPanel>{right}</RightPanel>
+              <RightPanel>
+                <div style={{ marginBottom: 30 }} />
+                {right}
+              </RightPanel>
             </Grid>
           </body>
         </>

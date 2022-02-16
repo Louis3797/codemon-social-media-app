@@ -25,7 +25,6 @@
   --color-success: #059669; */
 }
 
-
 html {
   -webkit-text-size-adjust: 100%;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -35,7 +34,7 @@ html {
 }
 body {
   font-family: inherit;
-
   padding: 0;
   margin: 0;
+  background-color: #23272a;
 }
