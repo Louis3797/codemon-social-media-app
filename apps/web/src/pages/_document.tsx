@@ -26,7 +26,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
           />
           {/* ----------------------------------------------- */}
-          <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <body>
           <Main />
