@@ -5,20 +5,21 @@ import './styles.css';
 
 const theme = createTheme({
   palette: {
-    primary: {
-      main: '#ffffff',
-      light: '#fffff',
-      dark: '#B2B2B2',
-    },
-    secondary: {
-      main: '#f5de0d',
-      light: '#F7E43D',
-      dark: '#AB9B09',
-    },
-    background: {
-      default: '#23272a',
-      paper: '#2c2f33',
-    },
+    mode: 'dark',
+    // primary: {
+    //   light: '#fffff',
+    //   main: '#ffffff',
+    //   dark: '#B2B2B2',
+    // },
+    // secondary: {
+    //   light: '#F7E43D',
+    //   main: '#f5de0d',
+    //   dark: '#AB9B09',
+    // },
+    // background: {
+    //   default: '#23272a',
+    //   paper: '#2c2f33',
+    // },
   },
 });
 
