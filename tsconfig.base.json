@@ -16,8 +16,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@codemon/shared-types": ["libs/shared-types/src/index.ts"],
-      "@codemon/ui": ["libs/ui/src/index.ts"]
+      "@codemon/shared-hooks": ["./libs/shared-hooks/src/index.ts"],
+      "@codemon/shared-types": ["./libs/shared-types/src/index.ts"],
+      "@codemon/ui": ["./libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -3,6 +3,7 @@
   "projects": {
     "api": "apps/api",
     "media-server": "apps/media-server",
+    "shared-hooks": "libs/shared-hooks",
     "shared-types": "libs/shared-types",
     "ui": "libs/ui",
     "web": "apps/web",
