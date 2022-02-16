@@ -11,11 +11,6 @@ export const Index: React.FC = () => {
             <Box sx={{ bgcolor: '#000', height: '100vh' }} />
           </div>
         }
-        left={
-          <div>
-            <Box sx={{ bgcolor: '#ff0000', height: '100vh' }} />
-          </div>
-        }
       >
         <div>
           <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
