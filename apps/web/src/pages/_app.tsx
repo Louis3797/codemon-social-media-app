@@ -1,39 +1,22 @@
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import './styles.css';
+import React from 'react';
+import '../styles/styles.css';
+import { theme } from '../styles/theme';
 
 function CustomApp({ Component, pageProps }: AppProps) {
-  const theme = createTheme({
-    palette: {
-      mode: 'dark',
-      primary: {
-        light: '#fffff',
-        main: '#ffffff',
-        dark: '#B2B2B2',
-      },
-      secondary: {
-        light: '#F7E43D',
-        main: '#f5de0d',
-        dark: '#AB9B09',
-      },
-      background: {
-        default: '#23272a',
-        paper: '#2c2f33',
-      },
-    },
-  });
   return (
-    <>
+    <React.Fragment>
+      <Head>
+        <title>Welcome to web!</title>
+      </Head>
       <ThemeProvider theme={theme}>
-        <Head>
-          <title>Welcome to web!</title>
-        </Head>
         <main className="app">
           <Component {...pageProps} />
         </main>
       </ThemeProvider>
-    </>
+    </React.Fragment>
   );
 }
 
