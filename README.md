@@ -110,9 +110,12 @@ This project uses npm as packet manager.
 <!-- ROADMAP -->
 ## Roadmap
 
-* [ ] Add Frontend
+* [ ] Create Frontend MVP
 * [ ] Setup Databases and Schemas
-* [ ] Setup Nestjs and Redis
+* [ ] Setup Setup Auth Service with Github OAuth
+* [ ] Setup GraphQL API with NestJS
+* [ ] Setup Redis Cache
+* [ ] Connect Frontend And API
 
 See the [open issues](https://github.com/Louis3797/codemon-social-media-app/issues) for a full list of proposed features (and known issues).
 
