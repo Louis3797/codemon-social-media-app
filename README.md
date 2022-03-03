@@ -88,7 +88,7 @@ This project uses npm as packet manager.
    git clone https://github.com/Louis3797/codemon-social-media-app.git
    ```
 
-2. Install yarn packages
+2. Install packages
 
    ```sh
     cd codemon-social-media-app
